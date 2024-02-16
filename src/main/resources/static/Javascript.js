@@ -5,12 +5,12 @@ let ut="<table><tr>" +
     function kjopticket(){
     const billett={
 
-        film: document.getElementById("Filmer").value,
-        antall: document.getElementById("Antall").value,
-        fornavn: document.getElementById("Fornavn").value,
-        etternavn: document.getElementById("Etternavn").value,
-        telefonnr: document.getElementById("Telefonnr").value,
-        epost: document.getElementById("Epost").value
+        Filmer: document.getElementById("Filmer").value,
+        Antall: document.getElementById("Antall").value,
+        Fornavn: document.getElementById("Fornavn").value,
+        Etternavn: document.getElementById("Etternavn").value,
+        Telefonnr: document.getElementById("Telefonnr").value,
+        Epost: document.getElementById("Epost").value
     };
 
     if (!billett.antall || !billett.antall || billett.fornavn || !billett.etternavn || !billett.telefonnr || !billett.epost) {
