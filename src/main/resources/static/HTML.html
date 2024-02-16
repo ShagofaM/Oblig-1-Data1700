@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kinobilletter</title>
+
+</head>
+<style>
+    label {display: table-cell;}
+    input {display: table-cell;}
+</style>
+<body>
+
+<h1 class="h1 text center">Bestilling av kinobilletter</h1>
+<form action="#">
+    <label for="Filmer"><select></select></label>
+    <select id="Filmer" class="form-select" aria-label="Default select example">
+        <option value="blank"></option>
+
+        <option value="Mission Impossible"> Mission Impossible</option>
+        <option value="The Hunger Games">The Hunger Games</option>
+        <option value="Maze Runner">Maze Runner</option>
+        <option value="The Notebook">The Notebook</option>
+        <option value="Superman">Superman</option>
+    </select>
+
+
+    <label for="Antall">Antall:</label>
+    <input id="Antall" class="form-control" type="number">
+    <p id="AntallError"></p><br>
+
+    <label for="Fornavn">Fornavn:</label>
+    <input id="Fornavn" class="form-control" type="text">
+    <p id="FornavnError"></p><br>
+
+    <label for="Etternavn">Etternavn:</label>
+    <input id="Etternavn" class="form-control" type="text">
+    <p id="EtternavnError"></p><br>
+
+    <label for="Telefonnr">Telefonnr:</label>
+    <input id="Telefonnr" class="form-controll" type="number">
+    <p id="TelefonnrError"></p><br>
+
+    <label for="Epost">E-post:</label>
+    <input id="Epostnr" class="form-control" type="email">
+    <p id="EpostError"></p><br>
+
+    <input type="submit" class="form-control" value="Kjøp billett" onclick="kjopbillett()">
+</form>
+
+<h1 class="h1 text-center">Alle billetter</h1>
+<div id="ut"></div>
+
+<button onclick="AltDelete()" type="billetter" class="btn btn-primary">Slett billetter</button>
+
+<script src=""></script>
+
+</body>
+</html>
