@@ -1,8 +1,8 @@
-let billetter=[]
-let ut="<table><tr>" +
+let billetter = [], ut = "<table><tr>" +
 
-    "<th>Film</th><th>Antall</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>Epost</th>"+"</tr>";
-    function kjopKinobilletter(){
+    "<th>Filmer</th><th>Antall</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>Epost</th>" + "</tr>";
+
+function kjopKnapp(){
     const billett={
 
         Filmer: document.getElementById("Filmer").value,
@@ -45,7 +45,7 @@ let ut="<table><tr>" +
         document.getElementById("TelefonnrError").valueL="";
         document.getElementById("EpostError").valueL="";
     }
-    function AltDelete() {
+    function slettKnapp() {
     document.getElementById("ut").innerHTML="";
     billetter=[];
     }

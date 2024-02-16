@@ -12,7 +12,7 @@
 </style>
 <body>
 
-<h1 class="h1 text center">Bestilling av kinobilletter</h1>
+<h1 class="h1 text center">Kinobillett bestilling</h1>
 <form action="#">
     <label for="Filmer">Velg filmer:</label>
     <select id="Filmer" class="form-select" aria-label="Default select example">
@@ -39,20 +39,20 @@
     <p id="EtternavnError"></p><br>
 
     <label for="Telefonnr">Telefonnr:</label>
-    <input id="Telefonnr" class="form-controll" type="number">
+    <input id="Telefonnr" class="form-control" type="number">
     <p id="TelefonnrError"></p><br>
 
     <label for="Epost">E-post:</label>
     <input id="Epost" class="form-control" type="email">
     <p id="EpostError"></p><br>
 
-    <button id="kjopKnapp">Kjøp Billetter</button>
+    <input type="submit" class="form-control" value="Kjøp billett" onclick="kjopKnapp()"
 </form>
 
 <h1 class="h1 text-center">Alle billetter</h1>
 <div id="ut"></div>
 
-<button id="slettKnapp">Slett billetter</button>
+<button onclick="slettKnapp()" type="button" class="btn">Slett billetter</button>
 
 <script src="Javascript.js"></script>
 
