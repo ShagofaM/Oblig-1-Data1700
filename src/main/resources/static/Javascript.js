@@ -13,7 +13,7 @@ function kjopKnapp(){
         Epost: document.getElementById("Epost").value
     };
 
-    if (!billett.antall || billett.fornavn || !billett.etternavn || !billett.telefonnr || !billett.epost) {
+    if (!billett.Antall || billett.Fornavn || !billett.Etternavn || !billett.Telefonnr || !billett.Epost) {
         document.getElementById("AntallError").innerHTML="Vennligst fyll inn antall billetter";
         document.getElementById("FornavnError").innerHTML="Vennligst fyll inn fornavn";
         document.getElementById("EtternavnError").innerHTML="Vennligst fyll inn etternavn";
@@ -25,7 +25,8 @@ function kjopKnapp(){
 
         for(let liste of billetter){
             ut+="<tr>"
-            ut+="<td>" + liste.film + "</td><td>+liste.antall+</td><td>+liste.epost+</td>";
+            ut+="<td>" + liste.Filmer + "</td><td>"+ liste.Antall +"</td><td>"+ liste.Fornavn+"</td>"+
+                "<td>" + liste.Etternavn+ "</td><td>" + liste.Telefonnr+"</td><td>"+liste.Epost+"</td>";
             ut+="</tr>"
 
         }
