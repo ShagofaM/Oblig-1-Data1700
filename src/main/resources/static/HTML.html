@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kinobilletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kjøp Kinobilletter</title>
 
 </head>
 <style>
@@ -45,13 +46,13 @@
     <input id="Epost" class="form-control" type="email">
     <p id="EpostError"></p><br>
 
-    <input type="submit" class="form-control" value="Kjøp billett" onclick="kjopbillett()">
+    <button id="kjopKnapp">Kjøp Billetter</button>
 </form>
 
 <h1 class="h1 text-center">Alle billetter</h1>
 <div id="ut"></div>
 
-<button onclick="AltDelete()" type="billetter" class="btn btn-primary">Slett billetter</button>
+<button id="slettKnapp">Slett billetter</button>
 
 <script src="Javascript.js"></script>
 

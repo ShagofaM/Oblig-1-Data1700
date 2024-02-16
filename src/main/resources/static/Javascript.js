@@ -1,8 +1,8 @@
 let billetter=[]
 let ut="<table><tr>" +
 
-    "<th>Film</th><th>Antall</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>Epost</th>"+"</tr>;
-    function kjopticket(){
+    "<th>Film</th><th>Antall</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>Epost</th>"+"</tr>";
+    function kjopKinobilletter(){
     const billett={
 
         Filmer: document.getElementById("Filmer").value,
@@ -13,7 +13,7 @@ let ut="<table><tr>" +
         Epost: document.getElementById("Epost").value
     };
 
-    if (!billett.antall || !billett.antall || billett.fornavn || !billett.etternavn || !billett.telefonnr || !billett.epost) {
+    if (!billett.antall || billett.fornavn || !billett.etternavn || !billett.telefonnr || !billett.epost) {
         document.getElementById("AntallError").innerHTML="Vennligst fyll inn antall billetter";
         document.getElementById("FornavnError").innerHTML="Vennligst fyll inn fornavn";
         document.getElementById("EtternavnError").innerHTML="Vennligst fyll inn etternavn";
